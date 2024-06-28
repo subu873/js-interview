@@ -1,1 +1,0 @@
-// find the second maximum element in array

@@ -9,7 +9,6 @@ const findSingleCount = (arr) => {
         acc[curr] = (acc[curr] || 0) + 1
         return acc
     }, {})
-    console.log("Count", count)
 
     let formattedArr = Object.keys(count)?.map((k) => {
         return {
