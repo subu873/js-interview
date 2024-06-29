@@ -33,7 +33,7 @@ console.timeEnd("memoization")
 console.log("-------------!-------------------")
 
 console.time("memoization")
-console.log( memoizedSumOfNumbers(100))
+console.log(memoizedSumOfNumbers(100))
 console.timeEnd("memoization")
 
 console.log("-------------!-------------------")
@@ -49,3 +49,30 @@ console.log("-------------!-------------------")
 console.time("memoization")
 console.log(memoizedSumOfNumbers(100))
 console.timeEnd("memoization")
+
+const Memoize = (callback) => {
+    let cache = {};
+    return function (...args) {
+        console.log("args", args)
+        let key = args.join("")
+        if (key in cache) {
+            console.log("cached called");
+            return cache[key]
+        } else {
+            console.log("new called")
+            let result = callback(args)
+            cache[key] = result
+            return result;
+        }
+    }
+
+}
+
+const sum = (arr) => {
+    return arr?.reduce((acc, curr) => {
+        return acc = acc + curr
+    }, 0)
+}
+
+const memoCall = Memoize(sum)
+memoCall(2, 3, 4, 5)
