@@ -23,3 +23,12 @@ function sumCall(a) {
     }
 }
 
+function practise(a) {
+    return function (b) {
+        if (b) {
+            return practise(a + b)
+        } else {
+            return a
+        }
+    }
+}

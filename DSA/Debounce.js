@@ -10,3 +10,5 @@ const DebounceMethod = (callback, delay = 300) => {
         }
     }
 }
+
+

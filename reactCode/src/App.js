@@ -5,6 +5,7 @@ import TimerApp from './pages/timer';
 import StopWatch from './pages/stopwatch';
 import { Fragment } from 'react';
 import ToDoApp from './pages/ToDoApp';
+import FileStructureUI from './pages/FileStructure';
 
 
 const App = () => {
@@ -12,7 +13,8 @@ const App = () => {
     <Fragment>
       {/* <TimerApp /> */}
       {/* <StopWatch /> */}
-      <ToDoApp />
+      {/* <ToDoApp /> */}
+      <FileStructureUI />
     </Fragment>
   )
 }

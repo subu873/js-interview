@@ -36,8 +36,8 @@ let characters = [
     }
 ];
 
-function sortByName(arr){
-    return arr.sort((a,b)=>{
+function sortByName(arr) {
+    return arr.sort((a, b) => {
         return a.name.localeCompare(b.name)
     })
 }
