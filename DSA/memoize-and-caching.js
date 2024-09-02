@@ -23,10 +23,12 @@ function createSumCache() {
     }
 }
 
-const sumCache= createSumCache();
+const sumCache = createSumCache();
 
 console.log(sumCache(3, 4));  // calculating sum ... 7
 console.log(sumCache(3, 4));  // result from cache   7
 console.log(sumCache(5, 6));  // calculating sum ... 11
 console.log(sumCache(5, 6));  // result from cache   11
+
+
 

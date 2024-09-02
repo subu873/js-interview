@@ -6,6 +6,9 @@ import StopWatch from './pages/stopwatch';
 import { Fragment } from 'react';
 import ToDoApp from './pages/ToDoApp';
 import FileStructureUI from './pages/FileStructure';
+import ThorttleUI from './pages/Thorttle';
+import DebounceUI from './pages/Debounce';
+import HolyGrail from './pages/HolyGrail';
 
 
 const App = () => {
@@ -14,7 +17,10 @@ const App = () => {
       {/* <TimerApp /> */}
       {/* <StopWatch /> */}
       {/* <ToDoApp /> */}
-      <FileStructureUI />
+      {/* <FileStructureUI /> */}
+      {/* <ThorttleUI /> */}
+      {/* <DebounceUI /> */}
+      <HolyGrail />
     </Fragment>
   )
 }

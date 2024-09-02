@@ -1,0 +1,46 @@
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+        'head head head'
+        'left center right'
+        'foot foot foot';
+    /* grid-template-rows: 200px 200px 200px; */
+}
+
+.header {
+    grid-area: head;
+    background-color: red;
+}
+
+.left {
+    grid-area: left;
+    background-color: blue;
+}
+
+.center {
+    grid-area: center;
+    background-color: green;
+}
+
+.right {
+    grid-area: right;
+    background-color: hotpink;
+}
+
+.footer {
+    grid-area: foot;
+    background-color: red;
+}
+
+@media only screen and (max-width:768px) and (min-width:250px) {
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'head'
+            'left'
+            'center'
+            'right'
+            'foot';
+    }
+}
